@@ -118,7 +118,7 @@ section {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -144,10 +144,24 @@ section {
   align-items: center;
 }
 
+.brand-logo span {
+  padding-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.scroll  span {
+  padding-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #575757;
+}
+
 .svg {
-  width: 50px;
+  width: 64px;
   display: block;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 .nav-list {
@@ -174,9 +188,13 @@ section {
 }
 
 .scroll a {
-  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-  background: #fff;
   color: #575757;
+}
+
+li a:hover,
+li a:active,
+li a:focus {
+  color: #ce3232;
 }
 
 .social-icon li a {
@@ -409,6 +427,18 @@ section {
   position: relative;
 }
 
+.menu-info .menu-price span {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: normal;
+  display: block;
+  margin-top: 10px;
+}
+
+a:hover .brand-logo span {
+  color: #ce3232;
+}
+
 .menu-thumb .menu-info p {
   color: #d9d9d9;
   text-transform: uppercase;
@@ -430,14 +460,6 @@ section {
 
 .menu-thumb .menu-info h3 {
   margin-top: 0;
-}
-
-.menu-info .menu-price span {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: normal;
-  display: block;
-  margin-top: 10px;
 }
 
 .menu-thumb img {

@@ -49,3 +49,14 @@ const slideShow = (elements, activePos = 0) => {
 };
 
 slideShow(slideElements);
+
+const navElement = document.querySelector('nav');
+const styleNavBar = () => {
+  if (window.scrollY < 40) {
+    navElement.classList.remove('scroll');
+  } else {
+    navElement.classList.add('scroll');
+  }
+};
+
+document.addEventListener('scroll', styleNavBar);
