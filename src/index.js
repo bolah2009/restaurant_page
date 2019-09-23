@@ -75,7 +75,7 @@ const slideShow = (elements, activePos = 0) => {
   setTimeout(slideShow, 5000, elements, nextIndex + 1);
 };
 
-// slideShow(slideElements);
+slideShow(slideElements);
 
 const styleNavBar = () => {
   if (mainElement.firstChild.id !== 'home') {
