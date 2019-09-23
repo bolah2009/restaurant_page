@@ -2,7 +2,7 @@
   "name": "restaurant_page",
   "version": "1.0.0",
   "description": "Dynamically rendering a simple restaurant homepage using JavaScript DOM manipulation",
-  "main": "./src/index.js",
+  "main": "./dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",

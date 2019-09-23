@@ -4,27 +4,44 @@ const navBarFragment = document.createDocumentFragment();
 
 const nav = document.createElement('nav');
 nav.classList.add('nav');
-nav.innerHTML = `<a href="#home">
-                  <div class="brand-logo">
+nav.innerHTML = `<button class="brand-logo-btn button" data-id="home">
+                  <div data-id="home" class="brand-logo">
                       ${svgLogo}
-                      <span>Food Palace</span>
+                      <span data-id="home">Food Palace</span>
                     </div>
-                  </a>
+                  </button>
                   <ul class="nav-list d-none-md">
                     <li class="nav-list-item">
-                    <button id="home-tab" type="button">home</button>
+                    <button class="button" data-id="home" type="button">home</button>
                     </li>
                     <li class="nav-list-item">
-                      <button id="about-tab" type="button">about</button>
+                      <button class="button" data-id="about" type="button">about</button>
                     </li>
                     <li class="nav-list-item">
-                    <button id="team-tab" type="button">chef</button>
+                    <button class="button" data-id="team" type="button">chef</button>
                     </li>
                     <li class="nav-list-item">
-                    <button id="menu-tab" type="button">menu</button>
+                    <button class="button" data-id="menu" type="button">menu</button>
                     </li>
                     <li class="nav-list-item">
-                    <button id="contact-tab" type="button">contact</button>
+                    <button class="button" data-id="contact" type="button">contact</button>
+                    </li>
+                  </ul>
+                  <ul class="nav-list small d-none">
+                    <li class="nav-list-item">
+                    <button class="button" data-id="home" type="button">home</button>
+                    </li>
+                    <li class="nav-list-item">
+                      <button class="button" data-id="about" type="button">about</button>
+                    </li>
+                    <li class="nav-list-item">
+                    <button class="button" data-id="team" type="button">chef</button>
+                    </li>
+                    <li class="nav-list-item">
+                    <button class="button" data-id="menu" type="button">menu</button>
+                    </li>
+                    <li class="nav-list-item">
+                    <button class="button" data-id="contact" type="button">contact</button>
                     </li>
                   </ul>
                   <button class="navbar-toggle">

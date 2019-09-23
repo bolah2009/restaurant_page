@@ -20,7 +20,7 @@ mainContent.appendChild(footerFragment);
 const navElement = document.querySelector('nav');
 const parentElement = document.querySelector('main');
 
-navElement.addEventListener('click', navHandler(parentElement));
+document.addEventListener('click', navHandler(parentElement));
 navElement.addEventListener('click', ({ target: { type, id } }) => {
   if (type === 'button' && id !== 'home-tab') {
     navElement.classList.add('scroll');
@@ -28,9 +28,14 @@ navElement.addEventListener('click', ({ target: { type, id } }) => {
 });
 
 const navbarToggle = document.querySelector('.navbar-toggle');
-const navList = document.querySelector('.nav-list');
+const navList = document.querySelector('.nav-list.small');
+
 navbarToggle.addEventListener('click', () => {
-  navList.classList.toggle('d-none-md');
+  navList.classList.toggle('d-none');
+});
+
+navList.addEventListener('click', () => {
+  navList.classList.add('d-none');
 });
 
 const slideElements = document.querySelectorAll('.preview');
@@ -89,4 +94,4 @@ const styleNavBar = () => {
   }
 };
 
-document.addEventListener('scroll', styleNavBar);
+document.addEventListener('scroll', styleNavBar, { passive: true });

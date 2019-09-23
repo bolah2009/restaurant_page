@@ -131,8 +131,14 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: none;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #575757;
   z-index: 2;
+}
+
+.preview {
+  padding-top: 80px;
 }
 
 .nav.scroll {
@@ -152,7 +158,6 @@ section {
   padding-left: 8px;
   font-size: 14px;
   font-weight: bold;
-  color: #fff;
 }
 
 .scroll span {
@@ -181,16 +186,20 @@ section {
   display: block;
 }
 
-.nav-list-item button {
+.nav-list-item .button,
+.button.brand-logo-btn {
   background: none;
   border: none;
   display: block;
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: inherit;
   text-transform: uppercase;
   line-height: normal;
-  padding: 10px 22px;
+}
+
+.nav-list-item button {
+  width: 100%;
 }
 
 .scroll button {
@@ -203,6 +212,9 @@ li a:focus {
   color: #ce3232;
 }
 
+button.brand-logo-btn span:hover,
+button.brand-logo-btn span:active,
+button.brand-logo-btn span:focus,
 li button:hover,
 li button:active,
 li button:focus {
@@ -324,14 +336,21 @@ li button:focus {
   color: #f9f9f9;
   font-size: inherit;
   font-weight: normal;
-  padding: 10px 25px;
+  padding: 10px 10px;
 }
 
-.button:hover,
-.button:active,
-.button:focus {
-  background: #353535;
-  color: #f9f9f9;
+.button:hover {
+  background: #ccc;
+  color: #ce3232;
+}
+
+.brand-logo-btn.button {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: normal;
 }
 
 .about-wrapper {
@@ -572,7 +591,6 @@ a:hover .brand-logo span {
   font-size: 14px;
   font-weight: normal;
   margin-bottom: 15px;
-  transition: all ease-in-out 0.4s;
 }
 
 #contact input {
@@ -725,11 +743,17 @@ a:hover .brand-logo span {
     padding-right: 0;
   }
 
+  .nav {
+    background: none;
+    color: #fff;
+  }
+
   .nav-list {
     flex-direction: row;
     width: 52%;
     padding-right: 2%;
     order: 0;
+    align-items: center;
   }
 
   .navbar-toggle {
@@ -763,6 +787,10 @@ a:hover .brand-logo span {
   .social {
     width: 16.667%;
   }
+
+  .button {
+    padding: 10px 25px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -774,4 +802,8 @@ a:hover .brand-logo span {
   .about .image {
     width: 50%;
   }
+}
+
+.d-none {
+  display: none;
 }

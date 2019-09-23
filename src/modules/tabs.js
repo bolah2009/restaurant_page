@@ -17,21 +17,23 @@ const navHandler = (parent) => {
     }
   };
 
-  return function navigator({ target: { id } }) {
+  return function navigator({ target: { dataset: { id } } }) {
+    if (!id) { return; }
+
     switch (id) {
-      case 'home-tab':
+      case 'home':
         replaceElemet(parent, homeFragment, 'home');
         break;
-      case 'about-tab':
+      case 'about':
         replaceElemet(parent, aboutFragment, 'about');
         break;
-      case 'team-tab':
+      case 'team':
         replaceElemet(parent, teamFragment, 'team');
         break;
-      case 'menu-tab':
+      case 'menu':
         replaceElemet(parent, menuFragment, 'menu');
         break;
-      case 'contact-tab':
+      case 'contact':
         replaceElemet(parent, contactFragment, 'contact');
         break;
       default:
