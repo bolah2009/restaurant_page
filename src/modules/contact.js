@@ -1,9 +1,10 @@
-const contactFragment = document.createDocumentFragment();
+const createContactFragment = () => {
+  const contactFragment = document.createDocumentFragment();
 
-const section = document.createElement('section');
-section.classList.add('contact');
-section.id = 'contact';
-section.innerHTML = `<div class="container">
+  const section = document.createElement('section');
+  section.classList.add('contact');
+  section.id = 'contact';
+  section.innerHTML = `<div class="container">
                     <div class="map-section">
                     <div id="google-map">
                         <iframe
@@ -52,6 +53,7 @@ section.innerHTML = `<div class="container">
                     </form>
                     </div>
                     </div>`;
-contactFragment.appendChild(section);
-
-export default contactFragment;
+  contactFragment.appendChild(section);
+  return contactFragment;
+};
+export default createContactFragment;

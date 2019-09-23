@@ -1,9 +1,10 @@
-const homeFragment = document.createDocumentFragment();
+const createHomeFragment = () => {
+  const homeFragment = document.createDocumentFragment();
 
-const section = document.createElement('section');
-section.classList.add('home');
-section.id = 'home';
-section.innerHTML = `<div class="home-wrapper">
+  const section = document.createElement('section');
+  section.classList.add('home');
+  section.id = 'home';
+  section.innerHTML = `<div class="home-wrapper">
                         <div class="preview active">
                             <header class="preview-text">
                             <h3>Eatery Cafe &amp; Restaurant</h3>
@@ -26,6 +27,8 @@ section.innerHTML = `<div class="home-wrapper">
                             </header>
                         </div>
                         </div>`;
-homeFragment.appendChild(section);
+  homeFragment.appendChild(section);
+  return homeFragment;
+};
 
-export default homeFragment;
+export default createHomeFragment;

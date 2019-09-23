@@ -1,35 +1,39 @@
 import navBarFragment from './modules/navbar';
-import homeFragment from './modules/home';
-import aboutFragment from './modules/about';
-import teamFragment from './modules/team';
-import menuFragment from './modules/menu';
-import contactFragment from './modules/contact';
+import createHomeFragment from './modules/home';
+import navHandler from './modules/tabs';
 import footerFragment from './modules/footer';
 
 
-const mainContent = document.querySelector('#content');
-
 const mainFragment = document.createDocumentFragment();
-mainFragment.appendChild(homeFragment);
-mainFragment.appendChild(aboutFragment);
-mainFragment.appendChild(teamFragment);
-mainFragment.appendChild(menuFragment);
-mainFragment.appendChild(contactFragment);
+const mainElement = document.createElement('main');
+mainElement.classList.add('main');
 
+const homeFragment = createHomeFragment();
+mainElement.appendChild(homeFragment);
+mainFragment.appendChild(mainElement);
+
+const mainContent = document.querySelector('#content');
 mainContent.appendChild(navBarFragment);
 mainContent.appendChild(mainFragment);
 mainContent.appendChild(footerFragment);
 
+const navElement = document.querySelector('nav');
+const parentElement = document.querySelector('main');
+
+navElement.addEventListener('click', navHandler(parentElement));
+navElement.addEventListener('click', ({ target: { type, id } }) => {
+  if (type === 'button' && id !== 'home-tab') {
+    navElement.classList.add('scroll');
+  }
+});
 
 const navbarToggle = document.querySelector('.navbar-toggle');
 const navList = document.querySelector('.nav-list');
-
 navbarToggle.addEventListener('click', () => {
   navList.classList.toggle('d-none-md');
 });
 
 const slideElements = document.querySelectorAll('.preview');
-
 const slideShow = (elements, activePos = 0) => {
   let [activeIndex, nextIndex] = [activePos, activePos + 1];
 
@@ -71,10 +75,13 @@ const slideShow = (elements, activePos = 0) => {
   setTimeout(slideShow, 5000, elements, nextIndex + 1);
 };
 
-slideShow(slideElements);
+// slideShow(slideElements);
 
-const navElement = document.querySelector('nav');
 const styleNavBar = () => {
+  if (mainElement.firstChild.id !== 'home') {
+    navElement.classList.add('scroll');
+    return;
+  }
   if (window.scrollY < 40) {
     navElement.classList.remove('scroll');
   } else {

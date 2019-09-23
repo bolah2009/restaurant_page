@@ -1,9 +1,10 @@
-const menuFragment = document.createDocumentFragment();
+const createMenuFragment = () => {
+  const menuFragment = document.createDocumentFragment();
 
-const section = document.createElement('section');
-section.classList.add('menu');
-section.id = 'menu';
-section.innerHTML = `<div class="container">
+  const section = document.createElement('section');
+  section.classList.add('menu');
+  section.id = 'menu';
+  section.innerHTML = `<div class="container">
                     <div class="header">
                     <div class="title">
                         <h2>Our Menus</h2>
@@ -125,6 +126,7 @@ section.innerHTML = `<div class="container">
                     </div>
                     </div>
                     </div>`;
-menuFragment.appendChild(section);
-
-export default menuFragment;
+  menuFragment.appendChild(section);
+  return menuFragment;
+};
+export default createMenuFragment;

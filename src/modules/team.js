@@ -1,9 +1,10 @@
-const teamFragment = document.createDocumentFragment();
+const createTeamFragment = () => {
+  const teamFragment = document.createDocumentFragment();
 
-const section = document.createElement('section');
-section.classList.add('team');
-section.id = 'team';
-section.innerHTML = `<div class="container">
+  const section = document.createElement('section');
+  section.classList.add('team');
+  section.id = 'team';
+  section.innerHTML = `<div class="container">
                     <div class="header">
                     <div class="title">
                         <h2>Meet our chefs</h2>
@@ -68,6 +69,7 @@ section.innerHTML = `<div class="container">
                     </div>
                     </div>
                     </div>`;
-teamFragment.appendChild(section);
-
-export default teamFragment;
+  teamFragment.appendChild(section);
+  return teamFragment;
+};
+export default createTeamFragment;

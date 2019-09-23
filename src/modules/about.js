@@ -1,9 +1,10 @@
-const aboutFragment = document.createDocumentFragment();
+const createAboutFragment = () => {
+  const aboutFragment = document.createDocumentFragment();
 
-const section = document.createElement('section');
-section.classList.add('about', 'container');
-section.id = 'about';
-section.innerHTML = `<div class="about-wrapper">
+  const section = document.createElement('section');
+  section.classList.add('about', 'container');
+  section.id = 'about';
+  section.innerHTML = `<div class="about-wrapper">
                         <div class="text">
                         <div class="title">
                             <h4>Read our story</h4>
@@ -29,6 +30,7 @@ section.innerHTML = `<div class="about-wrapper">
                         <img src="images/about-image.jpg" alt="" />
                         </div>
                         </div>`;
-aboutFragment.appendChild(section);
-
-export default aboutFragment;
+  aboutFragment.appendChild(section);
+  return aboutFragment;
+};
+export default createAboutFragment;

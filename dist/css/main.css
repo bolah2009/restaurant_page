@@ -75,6 +75,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 h3 a {
   color: #454545;
 }
@@ -177,7 +181,9 @@ section {
   display: block;
 }
 
-.nav-list-item a {
+.nav-list-item button {
+  background: none;
+  border: none;
   display: block;
   font-size: 12px;
   font-weight: bold;
@@ -187,13 +193,19 @@ section {
   padding: 10px 22px;
 }
 
-.scroll a {
+.scroll button {
   color: #575757;
 }
 
 li a:hover,
 li a:active,
 li a:focus {
+  color: #ce3232;
+}
+
+li button:hover,
+li button:active,
+li button:focus {
   color: #ce3232;
 }
 
@@ -586,6 +598,7 @@ a:hover .brand-logo span {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  padding-top: 64px;
 }
 
 .social,

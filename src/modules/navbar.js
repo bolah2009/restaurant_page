@@ -1,6 +1,5 @@
 import svgLogo from './svgLogo';
 
-
 const navBarFragment = document.createDocumentFragment();
 
 const nav = document.createElement('nav');
@@ -13,19 +12,19 @@ nav.innerHTML = `<a href="#home">
                   </a>
                   <ul class="nav-list d-none-md">
                     <li class="nav-list-item">
-                      <a href="#home">home</a>
+                    <button id="home-tab" type="button">home</button>
                     </li>
                     <li class="nav-list-item">
-                      <a href="#about">about</a>
+                      <button id="about-tab" type="button">about</button>
                     </li>
                     <li class="nav-list-item">
-                      <a href="#team">chef</a>
+                    <button id="team-tab" type="button">chef</button>
                     </li>
                     <li class="nav-list-item">
-                      <a href="#menu">menu</a>
+                    <button id="menu-tab" type="button">menu</button>
                     </li>
                     <li class="nav-list-item">
-                      <a href="#contact">contact</a>
+                    <button id="contact-tab" type="button">contact</button>
                     </li>
                   </ul>
                   <button class="navbar-toggle">
