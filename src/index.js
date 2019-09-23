@@ -1,3 +1,26 @@
+import navBarFragment from './modules/navbar';
+import homeFragment from './modules/home';
+import aboutFragment from './modules/about';
+import teamFragment from './modules/team';
+import menuFragment from './modules/menu';
+import contactFragment from './modules/contact';
+import footerFragment from './modules/footer';
+
+
+const mainContent = document.querySelector('#content');
+
+const mainFragment = document.createDocumentFragment();
+mainFragment.appendChild(homeFragment);
+mainFragment.appendChild(aboutFragment);
+mainFragment.appendChild(teamFragment);
+mainFragment.appendChild(menuFragment);
+mainFragment.appendChild(contactFragment);
+
+mainContent.appendChild(navBarFragment);
+mainContent.appendChild(mainFragment);
+mainContent.appendChild(footerFragment);
+
+
 const navbarToggle = document.querySelector('.navbar-toggle');
 const navList = document.querySelector('.nav-list');
 
