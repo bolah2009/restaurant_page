@@ -2,7 +2,7 @@
 
 This is the third project of the Main JavaScript curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
 
-The objective is to re-create a [simple restaurant homepage](https://templatemo.com/tm-515-eatery) by dynamically rendering it using JavaScript DOM manipulation. Only JavaScript is used to generate the entire contents of the website. The features of the page also include:
+The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-515-eatery) by dynamically rendering it using JavaScript DOM manipulation. Only JavaScript is used to generate the entire contents of the website. The features of the page also include:
 
 - HTML
   - HTML5 Semantic elements
