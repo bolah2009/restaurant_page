@@ -1,12 +1,44 @@
+import navBarFragment from './modules/navbar';
+import createHomeFragment from './modules/home';
+import navHandler from './modules/tabs';
+import footerFragment from './modules/footer';
+
+
+const mainFragment = document.createDocumentFragment();
+const mainElement = document.createElement('main');
+mainElement.classList.add('main');
+
+const homeFragment = createHomeFragment();
+mainElement.appendChild(homeFragment);
+mainFragment.appendChild(mainElement);
+
+const mainContent = document.querySelector('#content');
+mainContent.appendChild(navBarFragment);
+mainContent.appendChild(mainFragment);
+mainContent.appendChild(footerFragment);
+
+const navElement = document.querySelector('nav');
+const parentElement = document.querySelector('main');
+
+document.addEventListener('click', navHandler(parentElement));
+navElement.addEventListener('click', ({ target: { type, id } }) => {
+  if (type === 'button' && id !== 'home-tab') {
+    navElement.classList.add('scroll');
+  }
+});
+
 const navbarToggle = document.querySelector('.navbar-toggle');
-const navList = document.querySelector('.nav-list');
+const navList = document.querySelector('.nav-list.small');
 
 navbarToggle.addEventListener('click', () => {
-  navList.classList.toggle('d-none-md');
+  navList.classList.toggle('d-none');
+});
+
+navList.addEventListener('click', () => {
+  navList.classList.add('d-none');
 });
 
 const slideElements = document.querySelectorAll('.preview');
-
 const slideShow = (elements, activePos = 0) => {
   let [activeIndex, nextIndex] = [activePos, activePos + 1];
 
@@ -25,7 +57,7 @@ const slideShow = (elements, activePos = 0) => {
     elements[n].classList.add('active');
   };
 
-  const isActive = (pos) => elements[pos].classList.contains('active');
+  const isActive = pos => elements[pos].classList.contains('active');
 
   const findActive = () => {
     let foundActive = 0;
@@ -50,8 +82,11 @@ const slideShow = (elements, activePos = 0) => {
 
 slideShow(slideElements);
 
-const navElement = document.querySelector('nav');
 const styleNavBar = () => {
+  if (mainElement.firstChild.id !== 'home') {
+    navElement.classList.add('scroll');
+    return;
+  }
   if (window.scrollY < 40) {
     navElement.classList.remove('scroll');
   } else {
@@ -59,4 +94,4 @@ const styleNavBar = () => {
   }
 };
 
-document.addEventListener('scroll', styleNavBar);
+document.addEventListener('scroll', styleNavBar, { passive: true });
