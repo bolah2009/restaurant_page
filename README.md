@@ -4,6 +4,9 @@ This is the third project of the Main JavaScript curriculum at [Microverse](http
 
 The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-515-eatery) by dynamically rendering it using JavaScript DOM manipulation. Only JavaScript is used to generate the entire contents of the website. The features of the page also include:
 
+
+## Technologies Used
+
 - HTML
   - HTML5 Semantic elements
   - HTML Forms
@@ -11,30 +14,29 @@ The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-
   - CSS Flexbox
   - CSS Animations
   - CSS Media query
+- JavaScript
+   - ES6 Modules
+   - DocumentFragment
+   - DOM Manipulation
+   - Events
 - Dev Tools
   - Webpack
+  - Yarn
 - Linters
   - Eslint
-  - Stylelint
-- JavaScript
-- ES6 Modules
-- DocumentFragment
-- DOM Manipulation
-- Events
+  - StyleLint
 
-### Development
 
-- Dependencies
+## [Assignment link](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
-  - `eslint`: `^6.3.0`
-  - `eslint-config-airbnb`: `^18.0.1`
-  - `eslint-config-airbnb-base`: `^14.0.0`
-  - `eslint-plugin-import`: `^2.18.2`
-  - `stylelint`: `^11.0.0`
-  - `stylelint-config-recommended`: `^3.0.0`
-  - `webpack`: `^4.40.0`
-  - `webpack-cli`: `^3.3.8`
-  - `webpack-dev-server`: `^3.8.1`
+## 🌐 [Live link](https://bolah-restaurant-page.netlify.com/)
+
+## 🖼️ Screenshots
+
+|                                                      Home                                                      |                                                     About                                                      |                                                      Chef                                                      |                                                      Menu                                                      |                                                    Contact                                                     |
+| :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+| ![image](https://user-images.githubusercontent.com/36057474/65425482-fb126400-de05-11e9-92db-e44c9e82a1b5.png) | ![image](https://user-images.githubusercontent.com/36057474/65425533-1b422300-de06-11e9-9333-20a5e5025eb6.png) | ![image](https://user-images.githubusercontent.com/36057474/65425577-32811080-de06-11e9-9b10-4db6204e038e.png) | ![image](https://user-images.githubusercontent.com/36057474/65425682-6eb47100-de06-11e9-868d-44a20a56b56f.png) | ![image](https://user-images.githubusercontent.com/36057474/65425893-fc905c00-de06-11e9-8c99-07ad286b1a49.png) |
+## 🛠️ Development
 
 - Clone the project
 
@@ -43,62 +45,71 @@ git clone https://github.com/bolah2009/restaurant_page.git
 
 ```
 
-- Instal Dependencies
+
+- Install Dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
-- Run Script (Development mode)
+To run ESLint by itself, you may run the lint task:
 
 ```bash
-npm run dev
+yarn lint:check
 ```
 
-- Run Script (Production mode)
+Or to automatically fix issues found (where possible):
 
 ```bash
-npm run build
+yarn lint
 ```
 
-- Start server
+You can also check against Prettier:
 
 ```bash
-npm run start
+yarn format:check
 ```
 
-#### [Assignment link](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
+and to have it actually fix (to the best of its ability) any format issues, run:
 
-#### [Live link](https://bolah-restaurant-page.netlify.com/)
+```bash
+yarn format
+```
 
-### Screenshots
+- Start server (Development mode)
 
-|                                                      Home                                                      |                                                     About                                                      |                                                      Chef                                                      |                                                      Menu                                                      |                                                    Contact                                                     |
-| :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| ![image](https://user-images.githubusercontent.com/36057474/65425482-fb126400-de05-11e9-92db-e44c9e82a1b5.png) | ![image](https://user-images.githubusercontent.com/36057474/65425533-1b422300-de06-11e9-9333-20a5e5025eb6.png) | ![image](https://user-images.githubusercontent.com/36057474/65425577-32811080-de06-11e9-9b10-4db6204e038e.png) | ![image](https://user-images.githubusercontent.com/36057474/65425682-6eb47100-de06-11e9-868d-44a20a56b56f.png) | ![image](https://user-images.githubusercontent.com/36057474/65425893-fc905c00-de06-11e9-8c99-07ad286b1a49.png) |
+```bash
+yarn start
+```
 
-#### Authors
+- Start server (Production mode)
 
-- [@bolah2009](https://github.com/bolah2009/)
+```bash
+yarn build
+```
 
-## TODO
+## 🧾 TODO
 
 - Improve UI/UX
 
-## 🤝 Contributing
+## 🤝🏾 Contributing
 
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues).
 
-## Show your support
+## ⭐️ Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## 🙏🏾 Acknowledgments
 
 - Microverse Team
-- [templatemo.com](https://templatemo.com/tm-515-eatery) 
+- [templatemo.com](https://templatemo.com/tm-515-eatery)
+
+## 👨🏽‍💻 Author
+
+- [@bolah2009](https://github.com/bolah2009/)
 
 ## 📝 License
 
