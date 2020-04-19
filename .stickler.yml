@@ -1,9 +1,0 @@
-linters:
-  stylelint:
-    config: "stylelint.config.js"
-  eslint:
-    config: "./eslint.config"
-files:
-  ignore:
-    - "dist/*.js"
-    - '.*'

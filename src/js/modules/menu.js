@@ -16,7 +16,7 @@ const createMenuFragment = () => {
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="images/menu-image1.jpg" class="image-popup" title="American Breakfast">
-                        <img src="images/menu-image1.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/menu-image1.jpg" class="img-responsive" alt="" />
 
                         <div class="menu-info">
                             <div class="menu-item">
@@ -35,7 +35,7 @@ const createMenuFragment = () => {
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="images/menu-image2.jpg" class="image-popup" title="Self-made Salad">
-                        <img src="images/menu-image2.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/menu-image2.jpg" class="img-responsive" alt="" />
 
                         <div class="menu-info">
                             <div class="menu-item">
@@ -54,7 +54,7 @@ const createMenuFragment = () => {
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="images/menu-image3.jpg" class="image-popup" title="Chinese Noodle">
-                        <img src="images/menu-image3.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/menu-image3.jpg" class="img-responsive" alt="" />
 
                         <div class="menu-info">
                             <div class="menu-item">
@@ -73,7 +73,7 @@ const createMenuFragment = () => {
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="images/menu-image4.jpg" class="image-popup" title="Rice Soup">
-                        <img src="images/menu-image4.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/menu-image4.jpg" class="img-responsive" alt="" />
 
                         <div class="menu-info">
                             <div class="menu-item">
@@ -92,7 +92,7 @@ const createMenuFragment = () => {
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="images/menu-image5.jpg" class="image-popup" title="Project title">
-                        <img src="images/menu-image5.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/menu-image5.jpg" class="img-responsive" alt="" />
 
                         <div class="menu-info">
                             <div class="menu-item">
@@ -111,7 +111,7 @@ const createMenuFragment = () => {
                     <!-- MENU THUMB -->
                     <div class="menu-thumb">
                         <a href="images/menu-image6.jpg" class="image-popup" title="Project title">
-                        <img src="images/menu-image6.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/menu-image6.jpg" class="img-responsive" alt="" />
 
                         <div class="menu-info">
                             <div class="menu-item">

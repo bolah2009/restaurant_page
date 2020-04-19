@@ -3,7 +3,6 @@ import createHomeFragment from './modules/home';
 import navHandler from './modules/tabs';
 import footerFragment from './modules/footer';
 
-
 const mainFragment = document.createDocumentFragment();
 const mainElement = document.createElement('main');
 mainElement.classList.add('main');

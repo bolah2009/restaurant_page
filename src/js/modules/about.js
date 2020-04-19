@@ -27,7 +27,7 @@ const createAboutFragment = () => {
                         </div>
                         </div>
                         <div class="image">
-                        <img src="images/about-image.jpg" alt="" />
+                        <img src="assets/images/about-image.jpg" alt="" />
                         </div>
                         </div>`;
   aboutFragment.appendChild(section);

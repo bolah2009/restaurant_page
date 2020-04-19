@@ -80,3 +80,26 @@ npm run start
 #### Authors
 
 - [@bolah2009](https://github.com/bolah2009/)
+
+## TODO
+
+- Improve UI/UX
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse Team
+- [templatemo.com](https://templatemo.com/tm-515-eatery) 
+
+## 📝 License
+
+[MIT licensed](./LICENSE).

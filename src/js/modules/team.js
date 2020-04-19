@@ -14,7 +14,7 @@ const createTeamFragment = () => {
 
                     <div class="team-member">
                     <div class="team-thumb">
-                        <img src="images/team-image1.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/team-image1.jpg" class="img-responsive" alt="" />
                         <div class="team-hover">
                         <div class="team-item">
                             <h4>Duis vel lacus id magna mattis vehicula</h4>
@@ -33,7 +33,7 @@ const createTeamFragment = () => {
 
                     <div class="team-member">
                     <div class="team-thumb">
-                        <img src="images/team-image2.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/team-image2.jpg" class="img-responsive" alt="" />
                         <div class="team-hover">
                         <div class="team-item">
                             <h4>Cras suscipit neque quis odio feugiat</h4>
@@ -52,7 +52,7 @@ const createTeamFragment = () => {
 
                     <div class="team-member">
                     <div class="team-thumb">
-                        <img src="images/team-image3.jpg" class="img-responsive" alt="" />
+                        <img src="assets/images/team-image3.jpg" class="img-responsive" alt="" />
                         <div class="team-hover">
                         <div class="team-item">
                             <h4>Etiam auctor enim tristique faucibus</h4>

@@ -4,7 +4,7 @@ import teamFragment from './team';
 import menuFragment from './menu';
 import contactFragment from './contact';
 
-const navHandler = (parent) => {
+const navHandler = parent => {
   const replaceElemet = (mainElement, createNewElement, oldElementID) => {
     const newElement = createNewElement();
     if (mainElement.firstChild) {
@@ -17,8 +17,14 @@ const navHandler = (parent) => {
     }
   };
 
-  return function navigator({ target: { dataset: { id } } }) {
-    if (!id) { return; }
+  return function navigator({
+    target: {
+      dataset: { id },
+    },
+  }) {
+    if (!id) {
+      return;
+    }
 
     switch (id) {
       case 'home':

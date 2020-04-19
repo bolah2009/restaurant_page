@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 body {
   background: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 }
@@ -277,15 +277,15 @@ li a:focus {
 }
 
 .preview:nth-of-type(1) {
-  background: url(../images/slider-image1.jpg);
+  background: url(../assets/images/slider-image1.jpg);
 }
 
 .preview:nth-of-type(2) {
-  background: url(../images/slider-image2.jpg);
+  background: url(../assets/images/slider-image2.jpg);
 }
 
 .preview:nth-of-type(3) {
-  background: url(../images/slider-image3.jpg);
+  background: url(../assets/images/slider-image3.jpg);
 }
 
 @-webkit-keyframes fade {
@@ -638,7 +638,8 @@ li button:focus {
 
 .footer-open-hour {
   background: #ce3232;
-  background: url(../images/footer-open-hour-bg.jpg) center center no-repeat;
+  background: url(../assets/images/footer-open-hour-bg.jpg) center center
+    no-repeat;
   background-size: cover;
   border-radius: 20px;
   margin-top: 0;
@@ -652,7 +653,7 @@ li button:focus {
 
 .footer-open-hour::after {
   background: rgba(29, 29, 29, 0.85);
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
