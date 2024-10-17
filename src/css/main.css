@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 body {
   background: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 }
@@ -70,7 +70,6 @@ html {
 
 a {
   color: #252525;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
 }
@@ -126,19 +125,19 @@ section {
   left: 0;
   right: 0;
   top: 0;
-  padding: 16px 16px;
+  padding: 16px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
   background: #fff;
   color: #575757;
   z-index: 2;
 }
 
 .nav.scroll {
-  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
   background: #fff;
   color: #575757;
 }
@@ -189,7 +188,7 @@ section {
   color: #f9f9f9;
   font-size: inherit;
   font-weight: normal;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .nav-list-item .button,
@@ -252,7 +251,7 @@ li a:focus {
 
 .home {
   padding: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 50%);
   height: 650px;
 }
 
@@ -272,23 +271,22 @@ li a:focus {
   width: 100%;
   height: 100%;
   padding-top: 80px;
-  -webkit-animation: 1.5s fade;
   animation: 1.5s fade;
 }
 
 .preview:nth-of-type(1) {
-  background: url(/assets/images/slider-image1.jpg);
+  background: url("/assets/images/slider-image1.jpg");
 }
 
 .preview:nth-of-type(2) {
-  background: url(/assets/images/slider-image2.jpg);
+  background: url("/assets/images/slider-image2.jpg");
 }
 
 .preview:nth-of-type(3) {
-  background: url(/assets/images/slider-image3.jpg);
+  background: url("/assets/images/slider-image3.jpg");
 }
 
-@-webkit-keyframes fade {
+@keyframes fade {
   from {
     opacity: 0.7;
   }
@@ -393,7 +391,7 @@ li a:focus {
 }
 
 .team-info {
-  padding: 10px 30px 20px 30px;
+  padding: 10px 30px 20px;
 }
 
 .team-info p {
@@ -477,10 +475,7 @@ li button:focus {
 
 .menu-thumb .menu-info {
   position: absolute;
-  top: 60%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 60% 0 0;
   text-align: left;
   padding: 25px 30px;
   transition: 0.5s 0.2s;
@@ -500,7 +495,7 @@ li button:focus {
 }
 
 .menu-thumb:hover .menu-info {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 80%);
 }
 
 .menu-thumb:hover .menu-info h3,
@@ -578,7 +573,7 @@ li button:focus {
   display: block;
   width: 100%;
   padding: 6px 12px;
-  line-height: 1.42857143;
+  line-height: 1.4286;
   color: #555;
   background: transparent;
   border: 0;
@@ -639,7 +634,7 @@ li button:focus {
 .footer-open-hour {
   background: #ce3232;
   background:
-    url(/assets/images/footer-open-hour-bg.jpg) center center
+    url("/assets/images/footer-open-hour-bg.jpg") center center
     no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -653,13 +648,10 @@ li button:focus {
 }
 
 .footer-open-hour::after {
-  background: rgba(29, 29, 29, 0.85);
+  background: rgb(29 29 29 / 85%);
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   z-index: -2;
@@ -681,13 +673,13 @@ li button:focus {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .d-none-md {
     display: none;
   }
 }
 
-@media (min-width: 576px) {
+@media (width >= 576px) {
   .container {
     width: 546px;
   }
@@ -709,7 +701,7 @@ li button:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .container {
     width: 738px;
   }
@@ -760,7 +752,7 @@ li button:focus {
   }
 }
 
-@media (min-width: 992px) {
+@media (width >= 992px) {
   .container {
     width: 962px;
   }
@@ -792,7 +784,7 @@ li button:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .container {
     width: 1170px;
   }
