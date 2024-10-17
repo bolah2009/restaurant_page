@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    name: Build Checks
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+      - name: Install required dependency for node and build project
+        run: |
+          yarn install
+          yarn build
+
+  lint:
+    runs-on: ubuntu-22.04
+    name: Linter Checks
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+      - name: Run Linters
+        run: |
+          yarn install
+          yarn lint:check
+      - name: Run Prettier
+        run: |
+          yarn format:check
+
+  scan:
+    runs-on: ubuntu-22.04
+    name: Run Security Audit
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+      - name: Run Audit
+        run: |
+          yarn install
+          # yarn audit (even with --level) is exiting with a non-zero exit code on any found vulnerability level
+          # Here it should fail only on the critical vulnerability
+          # Solution based on:
+          # https://classic.yarnpkg.com/en/docs/cli/audit/
+          # https://github.com/yarnpkg/yarn/issues/7260#issuecomment-506556626
+          /bin/bash -c 'yarn audit; [[ $? -ge 16 ]] && exit 1 || exit 0'

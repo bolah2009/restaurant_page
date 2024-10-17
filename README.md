@@ -1,7 +1,5 @@
 # PROJECT: RESTAURANT PAGE
 
-This is the third project of the Main JavaScript curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
-
 The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-515-eatery) by dynamically rendering it using JavaScript DOM manipulation. Only JavaScript is used to generate the entire contents of the website. The features of the page also include:
 
 
@@ -29,7 +27,7 @@ The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-
 
 ## [Assignment link](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
-## 🌐 [Live link](https://bolah-restaurant-page.netlify.com/)
+## 🌐 [Live link](https://js-restaurant-page.bolabuari.com/)
 
 ## 🖼️ Screenshots
 

@@ -1,0 +1,60 @@
+version: 2
+
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '06:00'
+    commit-message:
+      prefix: 'dependabot'
+    open-pull-requests-limit: 12
+    ignore:
+      - dependency-name: 'eslint'
+        # Ignore all major version upgrades
+        update-types: [version-update:semver-major]
+    groups:
+      # This is used to group updates instead of opening multiple PRs for version updates
+      version-updates:
+        applies-to: version-updates
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      # This is used to group updates instead of opening multiple PRs for security updates
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '06:00'
+    commit-message:
+      prefix: 'dependabot'
+    open-pull-requests-limit: 10
+    groups:
+      # This is used to group updates instead of opening multiple PRs for version updates
+      version-updates:
+        applies-to: version-updates
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      # This is used to group updates instead of opening multiple PRs for security updates
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
