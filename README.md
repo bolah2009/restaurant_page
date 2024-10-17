@@ -18,7 +18,7 @@ The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-
    - DOM Manipulation
    - Events
 - Dev Tools
-  - Webpack
+  - Vite
   - Yarn
 - Linters
   - Eslint

@@ -9,10 +9,10 @@ updates:
       time: '06:00'
     commit-message:
       prefix: 'dependabot'
-    open-pull-requests-limit: 12
+    open-pull-requests-limit: 10
     ignore:
-      - dependency-name: 'eslint'
-        # Ignore all major version upgrades
+      # Ignore all major version upgrades
+      - dependency-name: '*'
         update-types: [version-update:semver-major]
     groups:
       # This is used to group updates instead of opening multiple PRs for version updates
