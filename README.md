@@ -2,7 +2,6 @@
 
 The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-515-eatery) by dynamically rendering it using JavaScript DOM manipulation. Only JavaScript is used to generate the entire contents of the website. The features of the page also include:
 
-
 ## Technologies Used
 
 - HTML
@@ -13,17 +12,16 @@ The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-
   - CSS Animations
   - CSS Media query
 - JavaScript
-   - ES6 Modules
-   - DocumentFragment
-   - DOM Manipulation
-   - Events
+  - ES6 Modules
+  - DocumentFragment
+  - DOM Manipulation
+  - Events
 - Dev Tools
   - Vite
   - Yarn
 - Linters
   - Eslint
   - StyleLint
-
 
 ## [Assignment link](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
@@ -34,15 +32,15 @@ The objective is to re-create a [restaurant homepage](https://templatemo.com/tm-
 |                                                      Home                                                      |                                                     About                                                      |                                                      Chef                                                      |                                                      Menu                                                      |                                                    Contact                                                     |
 | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
 | ![image](https://user-images.githubusercontent.com/36057474/65425482-fb126400-de05-11e9-92db-e44c9e82a1b5.png) | ![image](https://user-images.githubusercontent.com/36057474/65425533-1b422300-de06-11e9-9333-20a5e5025eb6.png) | ![image](https://user-images.githubusercontent.com/36057474/65425577-32811080-de06-11e9-9b10-4db6204e038e.png) | ![image](https://user-images.githubusercontent.com/36057474/65425682-6eb47100-de06-11e9-868d-44a20a56b56f.png) | ![image](https://user-images.githubusercontent.com/36057474/65425893-fc905c00-de06-11e9-8c99-07ad286b1a49.png) |
+
 ## 🛠️ Development
 
 - Clone the project
 
 ```bash
-git clone https://github.com/bolah2009/restaurant_page.git
+git clone https://github.com/bolah2009/js-restaurant-page.git
 
 ```
-
 
 - Install Dependencies
 
