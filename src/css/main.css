@@ -638,7 +638,8 @@ li button:focus {
 
 .footer-open-hour {
   background: #ce3232;
-  background: url(../assets/images/footer-open-hour-bg.jpg) center center
+  background:
+    url(../assets/images/footer-open-hour-bg.jpg) center center
     no-repeat;
   background-size: cover;
   border-radius: 20px;
