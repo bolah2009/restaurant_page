@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/bolah2009/restaurant_page#readme",
   "devDependencies": {
-    "copy-webpack-plugin": "^5.0.5",
+    "copy-webpack-plugin": "^6.4.1",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
