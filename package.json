@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/bolah2009/js-restaurant-page#readme",
   "devDependencies": {
-    "@eslint/compat": "^1.2.0",
+    "@eslint/compat": "^1.2.1",
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.12.0",
-    "eslint": "^9.0",
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13",
     "eslint-config-airbnb-base": "^15.0",
     "eslint-plugin-import": "^2.31.0",
     "globals": "^15.11.0",
