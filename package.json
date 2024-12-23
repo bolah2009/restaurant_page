@@ -29,16 +29,16 @@
   },
   "homepage": "https://github.com/bolah2009/js-restaurant-page#readme",
   "devDependencies": {
-    "@eslint/compat": "^1.2.0",
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.12.0",
-    "eslint": "^9.0",
+    "@eslint/compat": "^1.2.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17",
     "eslint-config-airbnb-base": "^15.0",
     "eslint-plugin-import": "^2.31.0",
-    "globals": "^15.11.0",
-    "prettier": "^3.0",
-    "stylelint": "^16.0.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4",
+    "stylelint": "^16.12.0",
     "stylelint-config-standard": "^36.0.0",
-    "vite": "^5.0.8"
+    "vite": "^5.4.11"
   }
 }
